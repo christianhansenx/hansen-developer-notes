@@ -1,4 +1,4 @@
-# Batch file examples command
+# Batch file command examples
 
 ## Dir list to text file with UTF-8
 
