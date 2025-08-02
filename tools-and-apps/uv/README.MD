@@ -22,7 +22,7 @@ everything's installed!
 ```
 then ```sudo mv /root/.local/bin/uv /usr/local/bin/```
 
-## Raspberry Pi
+### Raspberry Pi
 
 [Install uv with Snap](https://snapcraft.io/install/astral-uv/raspbian)
 
