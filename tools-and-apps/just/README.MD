@@ -14,9 +14,9 @@ Add the path with PowerShell<br>
 ```[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Program Files\Just", "User")```<br>
 [Adding path With Windows GUI](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10)
 
-To run just in PowerShell, it reuires following in the top of the justfile<br>
+To run just in PowerShell, it requires following in the top of the justfile<br>
 ```set shell := ["powershell.exe", "-NoProfile", "-Command"]```<br>
-*It's recomended to run just in Git Bash terminsal to use same justfile in Windows and Linux*
+*It's recommended to run just in Git Bash terminal to use same justfile in Windows and Linux*
 
 ### Linux
 
