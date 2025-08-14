@@ -37,5 +37,11 @@ Update project python version: ```uv pip install -e . --link-mode=copy```<br>
 
 Run: ```uv run <python-file>```<br>
 
+Add: ```uv add <python-package>```<br>
+
+Ruff (only for the project): ```uv add --dev ruff```<br>
+Ruff (globally): ```uv tool install ruff@latest```
+
+
 ## Links
 [Tutorial](https://www.datacamp.com/tutorial/python-uv)

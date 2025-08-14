@@ -23,7 +23,7 @@ Add all the files<br>
 git add .
 
 Commit the changes<br>
-git commit -m "commit message"
+git commit -m "initial"
 
 Delete the main/master branch<br>
 git branch -D main
