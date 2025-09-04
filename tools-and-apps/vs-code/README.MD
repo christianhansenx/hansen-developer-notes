@@ -14,17 +14,83 @@
     "git.allowForcePush": true
 ```
 
-## Plugins
+## Extensions
 
+### List Extensions
+
+To list all installed extensions: ```code --list-extensions```
+
+To create below code installation list: ```code --list-extensions | xargs -L 1 echo code --install-extension```<br>
+*Note: on Windows run the command line in Git Bash terminal*<br>
+[Export the Visual Studio Code extension list](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
+
+
+### Install Extensions
+
+Run following in terminal to install extensions:
 ```
-Code Spell Checker, v2.2.5
-markdownlint, v0.47.0
-Pylance
-GitLens
-pylens
-Auto-Open Markdown Preview
+code --install-extension ahmadalli.vscode-nginx-conf
+code --install-extension almir.nginx-syntax-highlighter
+code --install-extension bierner.markdown-preview-github-styles
+code --install-extension charliermarsh.ruff
+code --install-extension davidanson.vscode-markdownlint
+code --install-extension docker.docker
+code --install-extension donjayamanne.python-environment-manager
+code --install-extension eamodio.gitlens
+code --install-extension hediet.vscode-drawio
+code --install-extension hnw.vscode-auto-open-markdown-preview
+code --install-extension johnpapa.vscode-peacock
+code --install-extension ms-azuretools.vscode-containers
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.debugpy
+code --install-extension ms-python.flake8
+code --install-extension ms-python.isort
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-python.vscode-python-envs
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags
+code --install-extension ms-toolsai.vscode-jupyter-slideshow
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --install-extension ms-vscode.remote-explorer
+code --install-extension ms-vscode.remote-server
+code --install-extension redhat.java
+code --install-extension ritwickdey.liveserver
+code --install-extension secanis.jenkinsfile-support
+code --install-extension shanoor.vscode-nginx
+code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension techer.open-in-browser
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension visualstudioexptteam.intellicode-api-usage-examples
+code --install-extension visualstudioexptteam.vscodeintellicode
+code --install-extension vscjava.vscode-gradle
+code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-dependency
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-java-test
+code --install-extension vscjava.vscode-maven
+code --install-extension william-voyek.vscode-nginx
+code --install-extension yy0931.save-as-root
+code --install-extension yzane.markdown-pdf
+code --install-extension yzhang.markdown-all-in-one
+```
+
+Install/use with care:
+```
 Change All End Of Line Sequence
 ```
+
+### To remove all installed extensions:
+
+Linux: ```rm -rf ~/.vscode/extensions```
+
+Windows: ```rmdir %USERPROFILE%\.vscode\extensions /s```
 
 ## Windows - Git Bash terminal
 
