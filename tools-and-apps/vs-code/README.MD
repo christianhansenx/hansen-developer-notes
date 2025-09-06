@@ -11,7 +11,10 @@
         130
     ],
     "workbench.tree.indent": 24,
-    "git.allowForcePush": true
+    "git.allowForcePush": true,
+    "flake8.args": [
+        "--max-line-length=130"
+    ]
 ```
 
 ## Extensions
