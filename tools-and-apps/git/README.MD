@@ -17,22 +17,29 @@ https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-
 https://blog.avneesh.tech/how-to-delete-all-commit-history-in-github
 
 Create a new branch<br>
-git checkout --orphan new_main
+```git checkout --orphan new_main```
 
 Add all the files<br>
-git add .
+```git add .```
 
 Commit the changes<br>
-git commit -m "initial"
+```git commit -m "initial"```
 
 Delete the main/master branch<br>
-git branch -D main
+```git branch -D main```
 
 Rename the current branch to main<br>
-git branch -m main
+```git branch -m main```
 
 Finally, force update your repository<br>
-git push -f origin main
+```git push -f origin main```
+
+## Delete all local branches
+
+```
+git remote prune origin
+git fetch --prune && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+```
 
 ## Several github accounts (Windows)
 Open Credential Manager:<br>
