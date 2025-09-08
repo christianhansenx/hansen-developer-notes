@@ -13,9 +13,12 @@
     "workbench.tree.indent": 24,
     "git.allowForcePush": true,
     "flake8.args": [
-        "--max-line-length=130"
+        "--max-line-length=130",
+        "--ignore=E402"
     ]
 ```
+*Notes:<br>
+"--ignore=E402" **module level import not at top of file** (is already handled by ruff)*
 
 ## Extensions
 
