@@ -43,6 +43,9 @@ code --install-extension davidanson.vscode-markdownlint
 code --install-extension docker.docker
 code --install-extension donjayamanne.python-environment-manager
 code --install-extension eamodio.gitlens
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
+code --install-extension google.gemini-cli-vscode-ide-companion
 code --install-extension hediet.vscode-drawio
 code --install-extension hnw.vscode-auto-open-markdown-preview
 code --install-extension johnpapa.vscode-peacock
