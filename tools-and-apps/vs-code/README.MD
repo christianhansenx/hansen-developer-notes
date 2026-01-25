@@ -44,11 +44,11 @@ To create below code installation list: ```code --list-extensions | xargs -L 1 e
 *Note: on Windows run the command line in Git Bash terminal*\
 [Export the Visual Studio Code extension list](https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list)
 
-
 ### Install Extensions
 
 Run following in terminal to install extensions:
-```
+
+```text
 code --install-extension ahmadalli.vscode-nginx-conf
 code --install-extension almir.nginx-syntax-highlighter
 code --install-extension bierner.markdown-preview-github-styles
@@ -105,7 +105,7 @@ code --install-extension yzhang.markdown-all-in-one
 ```
 
 Install/use with care:
-```
+```text
 Change All End Of Line Sequence
 ```
 
@@ -136,7 +136,7 @@ In powershell terminal:\
 ```Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted```
 
 ERROR: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available\
-[Miniconda ssl issue](https://stackoverflow.com/questions/45954528/pip-is-configured-with-locations-that-require-tls-ssl-however-the-ssl-module-in)
+[Miniconda ssl issue](https://stackoverflow.com/questions/45954528/pip-is-configured-with-locations-that-require-tls-ssl-however-the-ssl-module-in)\
 Copy the following files from C:\Users\MyUser\Miniconda3\Library\bin to C:\Users\MyUser\Miniconda3\DLLs:\
 libcrypto-1_1-x64.dll\
 libcrypto-1_1-x64.pdb\
@@ -157,11 +157,14 @@ libssl-1_1-x64.pdb
 
 https://docs.microsoft.com/en-us/windows/python/web-frameworks
 https://stackoverflow.com/questions/61528500/installing-venv-for-python3-in-wsl-ubuntu
-sudo pip install virtualenv
-mkdir .venv
-virtualenv -p python3 .venv
-source .venv/bin/activate
+
+```shell
+sudo pip install virtualenv\
+mkdir .venv\
+virtualenv -p python3 .venv\
+source .venv/bin/activate\
 deactivate
+```
 
 If no python found for windows then try with:
 py -m venv .venv
