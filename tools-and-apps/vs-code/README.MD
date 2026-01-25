@@ -4,20 +4,34 @@
 
 ### User settings
 
-[shift][ctrl][p] Preferences: Open Settings (JSON)
-```
+\[shift]\[ctrl]\[p] Preferences: Open Settings (JSON)
+
+```json
+{
+    "workbench.colorTheme": "Default Light+",
+    "liveServer.settings.donotShowInfoMsg": true,
     "files.autoSave": "afterDelay",
     "editor.rulers": [
         130
     ],
     "workbench.tree.indent": 24,
     "git.allowForcePush": true,
+    "python.terminal.activateEnvironment": false,
+    "window.zoomLevel": 1,
+    "python.defaultInterpreterPath": "c:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps\\python3.13.exe",
+    "git.confirmSync": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "git.suggestSmartCommit": false,
     "flake8.args": [
         "--max-line-length=130",
         "--ignore=E402"
-    ]
+    ],
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+}
 ```
-*Notes:<br>
+
+*Notes:\
 "--ignore=E402" **module level import not at top of file** (is already handled by ruff)*
 
 ## Extensions
@@ -103,14 +117,14 @@ Windows: ```rmdir %USERPROFILE%\.vscode\extensions /s```
 
 ## Windows - Git Bash terminal
 
-[shift][ctrl][p] Select Default Profile >> Terminal: Select Default Profile >> Git Bash
+\[shift]\[ctrl]\[p] Select Default Profile >> Terminal: Select Default Profile >> Git Bash
 
 ## WSL
 
 ### Open project in WSL
 
 Open folder
-Shift+Ctrl+P ```WSL:Reopen Folder in WSL```
+\[shift]\[ctrl]\[p] ```WSL:Reopen Folder in WSL```
 
 ## Links
 
@@ -118,12 +132,12 @@ Shift+Ctrl+P ```WSL:Reopen Folder in WSL```
 
 ## OLD NOTES
 
-In powershell terminal:<br>
+In powershell terminal:\
 ```Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted```
 
-ERROR: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available<br>
-https://stackoverflow.com/questions/45954528/pip-is-configured-with-locations-that-require-tls-ssl-however-the-ssl-module-in<br>
-I copy the following files from C:\Users\MyUser\Miniconda3\Library\bin to C:\Users\MyUser\Miniconda3\DLLs:<br>
+ERROR: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available\
+https://stackoverflow.com/questions/45954528/pip-is-configured-with-locations-that-require-tls-ssl-however-the-ssl-module-in\
+Copy the following files from C:\Users\MyUser\Miniconda3\Library\bin to C:\Users\MyUser\Miniconda3\DLLs:\
 libcrypto-1_1-x64.dll<br>
 libcrypto-1_1-x64.pdb<br>
 libssl-1_1-x64.dll<br>
