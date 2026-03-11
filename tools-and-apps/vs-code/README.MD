@@ -24,15 +24,17 @@
     "git.suggestSmartCommit": false,
     "flake8.args": [
         "--max-line-length=130",
-        "--ignore=E402"
+        "--ignore=E402",
+        "--ignore=W504"
     ],
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }
 ```
 
-*Notes:\
-"--ignore=E402" **module level import not at top of file** (is already handled by ruff)*
+*Notes:*\
+*"--ignore=E402" **module level import not at top of file** (is already handled by ruff)*\
+*"--ignore=W504" **line break after binary operator***
 
 ## Extensions
 
@@ -90,8 +92,6 @@ code --install-extension shanoor.vscode-nginx
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension techer.open-in-browser
 code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension visualstudioexptteam.intellicode-api-usage-examples
-code --install-extension visualstudioexptteam.vscodeintellicode
 code --install-extension vscjava.vscode-gradle
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
