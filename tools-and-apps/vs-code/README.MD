@@ -11,9 +11,13 @@
     "workbench.colorTheme": "Default Light+",
     "liveServer.settings.donotShowInfoMsg": true,
     "files.autoSave": "afterDelay",
-    "flake8.enabled": false,
     "editor.rulers": [
         130
+    ],
+    "flake8.args": [
+        "--max-line-length=130",
+        "--ignore=E402",
+        "--ignore=W504"
     ],
     "workbench.tree.indent": 24,
     "git.allowForcePush": true,
@@ -27,6 +31,11 @@
     "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }
 ```
+
+*Notes:*\
+*"--ignore=E402" **module level import not at top of file** (is already handled by ruff)*\
+*"--ignore=W504" **line break after binary operator***
+
 
 ## Extensions
 
